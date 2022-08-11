@@ -2,11 +2,20 @@
     font-family: 'Hellovetica';
     src: url('hellovetica.ttf');
 }
+@font-face {
+    font-family: 'Press Start';
+    src: url('PressStart2P-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'MS Sans Serif';
+    src: url('MSSansSerif.ttf')
+}
 
 
 
 html{
-    font-family: Hellovetica;
+    font-family: 'MS Sans Serif';
     background-color: #01817F;
     scroll-behavior: smooth;
 }
@@ -29,7 +38,7 @@ html{
     width: 80px;
     height: 25px;
     background-color: white;
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
     vertical-align: middle;
     line-height: 25px;
@@ -47,8 +56,10 @@ html{
     padding-top: 55px;
 }
 #home h1{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 #home-picture{
     width: 250px;
@@ -58,41 +69,47 @@ html{
     border-radius: 50%;
     border: 2px solid black;
     padding: 0px;
+    position: relative;
+    z-index: -1;
+    bottom: 20px;
 }
 #title{
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
     position: relative;
     z-index: -1;
-    bottom: 30px;
+    bottom: 40px;
 }
 
 #title-pic{
     padding: 0px;
+    position: relative;
+    z-index:-1;
+    top: 10px;
 }
 
 
 #intro{
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 0.75rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.25rem;
     position: relative;
     z-index: -1;
-    bottom: 10px;
+    bottom: 20px;
 }
 
 #about{
-    height: 667px;
+    height: 585px;
     margin-top: 0px;
 }
 #about h1{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-align: center;
     padding-top: 70px;
 }
 #about p{
-    font-size: 0.75rem;
-    line-height: 2;
+    font-size: 1.25rem;
+    line-height: 1.2;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -111,14 +128,37 @@ html{
     bottom: 25px;
     text-align: right;
 }
-#plus{
-    padding:0px;
-    font-family: sans-serif;
-    position: absolute;
-    left: 197px;
-    top: 1221px;
-    z-index: -1;
-}
+
 #learning{
     text-align: right;
+}
+#projects{
+    height: 667px;
+    margin-top: 0px;
+}
+#projects h1{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 70px;
+}
+
+#project-pic{
+    padding-left: 10px;
+    position: relative;
+    top: 4px;
+    z-index: -1;
+}
+#project-preview{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: auto;    
+}
+
+#projects h2{
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 5px;
+    
 }
