@@ -177,7 +177,7 @@ html{
 }
 
 #resume{
-    height: 677px;
+    height: 640px;
 }
 
 #resume h1{
@@ -211,6 +211,7 @@ html{
     display: flex;
     justify-content: center;
     margin: 5px;
+    padding-bottom: 30px;
 }
 #view-resume #navigation-box{
     padding: 5px;
@@ -220,4 +221,9 @@ html{
     position: relative;
     z-index: -1;
     top: 7px;
+}
+
+footer{
+    text-align: center;
+    font-size: 12px;
 }
