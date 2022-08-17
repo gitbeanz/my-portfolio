@@ -52,7 +52,8 @@ html{
 
 
 #home{
-    height: 550px;
+    /*550*/
+    height: auto;
     padding-top: 55px;
 }
 #home h1{
@@ -99,7 +100,8 @@ html{
 }
 
 #about{
-    height: 585px;
+    /*585*/
+    height: auto;
     margin-top: 0px;
 }
 #about h1{
@@ -133,7 +135,8 @@ html{
     text-align: right;
 }
 #projects{
-    height: 1120px;
+    /*1140*/
+    height: auto;
     margin-top: 0px;
 }
 #projects h1{
@@ -177,7 +180,8 @@ html{
 }
 
 #resume{
-    height: 640px;
+    /*640*/
+    height: auto;
 }
 
 #resume h1{
@@ -227,3 +231,34 @@ footer{
     text-align: center;
     font-size: 12px;
 }
+
+/* 320 - 375 */
+@media only screen and (max-width: 361px) {
+    #navigation-bar #navigation-box{
+        width: 53.3px;
+        height: 16px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@media only screen and (max-width: 374px){
+    #about p{
+        line-height: 1.1;
+    }
+}
+
+@media only screen and (max-width: 325px){
+    #about p{
+        font-size: 1.15rem;
+        line-height: 1.2;
+    }
+}
+
+@media only screen and (max-width: 364px){
+    #about p{
+        font-size: 1.15rem;
+        line-height: 1.2;
+    }
+}
+
