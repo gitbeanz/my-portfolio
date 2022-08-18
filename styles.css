@@ -19,6 +19,9 @@ html{
     background-color: #01817F;
     scroll-behavior: smooth;
 }
+body{
+    padding: 0 15px;
+}
 
 #navigation-bar{
     height: 50px;
@@ -155,7 +158,7 @@ html{
     z-index: -1;
 }
 #project-preview{
-    width: 300px;
+    width: 280px;
     height: auto;
     display: block;
     margin: auto;    
@@ -232,7 +235,7 @@ footer{
     font-size: 12px;
 }
 
-/* 320 - 375 */
+
 @media only screen and (max-width: 361px) {
     #navigation-bar #navigation-box{
         width: 53.3px;
@@ -241,7 +244,29 @@ footer{
         line-height: 16px;
     }
 }
+@media only screen and (min-width: 330px){
+    #project-preview{
+        width: 300px;
+    }
+}
+@media only screen and (min-width: 500px){
+    #project-preview{
+        width: 450px;
+    }
+    body{
+        padding: 0 30px;
+    }
+}
 
+@media only screen and (min-width: 700px){
+    #project-preview{
+        width: 550px;
+    }
+    body{
+        padding: 0 50px;
+    }
+}
+/*
 @media only screen and (max-width: 374px){
     #about p{
         line-height: 1.1;
@@ -261,7 +286,7 @@ footer{
         line-height: 1.2;
     }
 }
-/* 375 - 521*/
+/* 375 - 521
 @media only screen and (min-width: 452px){
     #about p{
         font-size: 1.3rem;
@@ -277,9 +302,14 @@ footer{
     }
     #home p{
         font-size: 1.5rem;
+        padding: 0 1rem;
+        position: relative;
+        z-index: -1;
+        bottom: 60px;
     }
     #about p{
         font-size: 1.5rem;
+        padding: 0 1rem;
     }
     #projects h1{
         font-size: 2.75rem;
@@ -294,3 +324,27 @@ footer{
         font-size: 1.5rem;
     }
 }
+
+@media only screen and (min-width: 510px){
+    #home-picture{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    #title{
+        margin-bottom: 3rem;
+    }
+}
+
+@media only screen and (min-width: 702px) {
+    #about p{
+        font-size: 1.75rem;
+    }
+    #home p{
+        font-size: 1.75rem;
+    }
+    #resume p{
+        font-size: 1.75rem;
+    }
+}
+
+*/
