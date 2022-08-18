@@ -18,10 +18,25 @@ html{
     font-family: 'MS Sans Serif';
     background-color: #01817F;
     scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 500%; 
+    width: 100%; 
+    margin: 0px;
+    padding: 0px;
+}
+.page{
+    height: 20%;
+    width: 100%;
 }
 
 #navigation-bar{
-    height: 50px;
+    height: 7.5vh;
+    
     width: 100%;
     overflow: hidden;
     top: 0;
@@ -34,14 +49,14 @@ html{
 }
 
 #navigation-box{
-    margin-top: 20px;
-    width: 80px;
-    height: 25px;
+    margin-top: 3vh;
+    width: 21.3vw;
+    height: 3.75vh;
     background-color: white;
-    font-size: 14px;
+    font-size: 2vh;
     text-align: center;
     vertical-align: middle;
-    line-height: 25px;
+    line-height: 3.75vh;
     border: 2px solid black;
 }
 
@@ -53,7 +68,6 @@ html{
 
 #home{
     /*550*/
-    height: auto;
     padding-top: 55px;
 }
 #home h1{
@@ -101,7 +115,6 @@ html{
 
 #about{
     /*585*/
-    height: auto;
     margin-top: 0px;
 }
 #about h1{
@@ -136,15 +149,15 @@ html{
 }
 #projects{
     /*1140*/
-    height: auto;
     margin-top: 0px;
 }
-#projects h1{
+#projects h1, #projects-cont h1{
     font-size: 2.5rem;
     text-align: center;
     padding-top: 70px;
     padding-bottom: 20px;
 }
+
 
 #project-pic{
     padding-left: 10px;
@@ -162,14 +175,14 @@ html{
     border: 2px solid black;
 }
 
-#projects h2{
+#projects h2, #projects-cont h2{
     font-size: 1.25rem;
     text-align: left;
     padding-top: 5px;
     padding-left: 30px;
     padding-bottom: 5px;
 }
-#projects p{
+#projects p, #projects-cont p{
     padding-left: 30px;
     padding-right: 10px;
 }
@@ -178,12 +191,6 @@ html{
     justify-content: space-evenly;
     margin-bottom: 55px;
 }
-
-#resume{
-    /*640*/
-    height: auto;
-}
-
 #resume h1{
     font-size: 2.5rem;
     text-align: center;
@@ -232,7 +239,7 @@ footer{
     font-size: 12px;
 }
 
-/* 320 - 375 */
+ /*320 - 375
 @media only screen and (max-width: 361px) {
     #navigation-bar #navigation-box{
         width: 53.3px;
@@ -262,3 +269,4 @@ footer{
     }
 }
 
+*/
