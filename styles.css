@@ -23,6 +23,7 @@ body{
     padding: 0 15px;
 }
 
+
 #navigation-bar{
     height: 50px;
     width: 100%;
@@ -31,7 +32,7 @@ body{
     left: 0;
     position: fixed;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     bottom: 0px;
     background-color: #01817F;
 }
@@ -46,6 +47,8 @@ body{
     vertical-align: middle;
     line-height: 25px;
     border: 2px solid black;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #navigation-box a:hover{
@@ -60,10 +63,10 @@ body{
     padding-top: 55px;
 }
 #home h1{
-    font-size: 2.5rem;
+    font-size: clamp(2.5rem, 5vw, 65px);
     text-align: center;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin-top: 30px;
+
 }
 #home-picture{
     width: 250px;
@@ -92,10 +95,14 @@ body{
     top: 10px;
 }
 
+#intro-div{
+    max-width: 480px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
 
 #intro{
-    padding-left: 10px;
-    padding-right: 10px;
     font-size: 1.25rem;
     position: relative;
     z-index: -1;
@@ -117,6 +124,13 @@ body{
     line-height: 1.2;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+#about-div{
+    max-width: 572px;
+    width: 100%;
+    height: auto;
+    margin: auto;
 }
 
 #paint{
@@ -165,17 +179,18 @@ body{
     border: 2px solid black;
 }
 
+#project-description{
+    height: auto;
+    margin: auto;
+    max-width: 280px;
+    width: 100%;
+}
+
 #projects h2{
     font-size: 1.25rem;
     text-align: left;
-    padding-top: 5px;
-    padding-left: 30px;
-    padding-bottom: 5px;
 }
-#projects p{
-    padding-left: 30px;
-    padding-right: 10px;
-}
+
 #project-links{
     display: flex;
     justify-content: space-evenly;
@@ -214,6 +229,13 @@ body{
     font-size: 1.25rem;
 }
 
+#link-section{
+    height: auto;
+    margin: auto;
+    width: 100%;
+    width: 593px;
+}
+
 #view-resume{
     display: flex;
     justify-content: center;
@@ -236,25 +258,27 @@ footer{
 }
 
 
-@media only screen and (max-width: 361px) {
+@media only screen and (max-width: 500px) {
     #navigation-bar #navigation-box{
-        width: 53.3px;
-        height: 16px;
-        font-size: 12px;
-        line-height: 16px;
+        padding: 0 5px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }
 @media only screen and (min-width: 330px){
     #project-preview{
         width: 300px;
     }
+    #project-description{
+        max-width: 300px;
+    }
 }
 @media only screen and (min-width: 500px){
     #project-preview{
-        width: 450px;
+        width: 400px;
     }
-    body{
-        padding: 0 30px;
+    #project-description{
+        max-width: 400px;
     }
 }
 
@@ -262,10 +286,20 @@ footer{
     #project-preview{
         width: 550px;
     }
-    body{
-        padding: 0 50px;
+    #project-description{
+        max-width: 550px;
     }
 }
+@media only screen and (min-width: 900px){
+    #project-preview{
+        width: 700px;
+    }
+    #project-description{
+        max-width: 700px;
+    }
+}
+
+
 /*
 @media only screen and (max-width: 374px){
     #about p{
