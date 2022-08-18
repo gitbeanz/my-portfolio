@@ -49,6 +49,7 @@ body{
     border: 2px solid black;
     margin-left: 20px;
     margin-right: 20px;
+    box-shadow: 3px 3px;
 }
 
 #navigation-box a:hover{
